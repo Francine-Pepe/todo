@@ -52,6 +52,9 @@ function App() {
       body: JSON.stringify(todo),
       headers: {
         "Content-Type": "application/json",
+        Accept: 'application/json;odata.metadata=full',
+        'Access-Control-Allow-Origin':'*'
+
       },
     });
 
@@ -82,6 +85,8 @@ function App() {
       body: JSON.stringify(todo),
       headers: {
         "Content-Type": "application/json",
+        Accept: 'application/json;odata.metadata=full',
+        'Access-Control-Allow-Origin':'*'
       },
     });
 
