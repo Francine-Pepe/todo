@@ -89,8 +89,7 @@ function App() {
   if (loading) {
     return (
       <div className="loading">
-        {" "}
-        <Loading />{" "}
+        <Loading />
       </div>
     );
   }
