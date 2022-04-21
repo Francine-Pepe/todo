@@ -18,7 +18,7 @@ function App() {
     const loadData = async () => {
       setLoading(true);
 
-      const res = await fetch(API + "/todos")
+      const res = await fetch(API + "/todos", { mode: 'no-cors' })
         .then((res) => res.json())
         .then((data) => data)
         .catch((err) => console.log(err));
