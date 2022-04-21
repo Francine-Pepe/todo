@@ -112,7 +112,7 @@ input[type="submit"] {
 .todo p {
     text-align: left;
     font-style: italic;
-    font-size: .7em;
+    font-size: 1em;
     margin-bottom: 1.5em;
 }
 
@@ -131,6 +131,17 @@ input[type="submit"] {
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.due_date {
+    display: flex;
+    align-items: center;
+}
+
+.due_date p {
+    margin-right: 2em;
+    font-size: 1em;
+    
 }
 
 /* Calendario CSS */
