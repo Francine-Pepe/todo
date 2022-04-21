@@ -18,7 +18,8 @@ function App() {
     const loadData = async () => {
       setLoading(true);
 
-      const res = await fetch(API + "/todos", { mode: 'cors' })
+      const res = await fetch(API + "/todos", { mode: 'cors', headers: 
+        {'Access-Control-Allow-Origin':'*'}, Accept: 'application/json;odata.metadata=full', 'Content-Type': 'application/json' })
         .then((res) => res.json())
         .then((data) => data)
         .catch((err) => console.log(err));
@@ -45,6 +46,7 @@ function App() {
     // Envio para a API:
     // requisicao assíncrona
     await fetch(API + "/todos", {
+      
       mode: 'cors',
       method: "POST",
       body: JSON.stringify(todo),
