@@ -18,7 +18,7 @@ function App() {
     const loadData = async () => {
       setLoading(true);
 
-      const res = await fetch(API + "/todos", { mode: 'no-cors' })
+      const res = await fetch(API + "/todos", { mode: 'cors' })
         .then((res) => res.json())
         .then((data) => data)
         .catch((err) => console.log(err));
@@ -45,7 +45,7 @@ function App() {
     // Envio para a API:
     // requisicao assíncrona
     await fetch(API + "/todos", {
-      mode: 'no-cors',
+      mode: 'cors',
       method: "POST",
       body: JSON.stringify(todo),
       headers: {
@@ -63,7 +63,7 @@ function App() {
   // para deletar a tarefa:
   const handleDelete = async (id) => {
     await fetch(API + "/todos/" + id, {
-      mode: 'no-cors',
+      mode: 'cors',
       method: "DELETE",
     });
 
@@ -75,7 +75,7 @@ function App() {
     todo.done = !todo.done;
 
     const data = await fetch(API + "/todos/" + todo.id, {
-      mode: 'no-cors',
+      mode: 'cors',
       method: "PUT",
       body: JSON.stringify(todo),
       headers: {
