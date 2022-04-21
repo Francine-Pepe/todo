@@ -76,7 +76,7 @@
     color: #dfdfdf;
     font-family: 'Rock Salt', cursive;
     width: 80%;
-    margin: 0 10%;
+    margin: 0 auto;
 }
 
 input[type="submit"] {
