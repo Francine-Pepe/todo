@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { BsTrash, BsBookmarkCheck, BsBookmarkCheckFill } from "react-icons/bs";
 import Loading from "./Components/Loading";
 import Calendario from "./Components/Calendario";
+import Logo from './Images/to-do-list.png';
+import Footer from './Components/Footer';
 
 const API = "https://my-json-server.typicode.com/francine-pepe/todo-db";
 
@@ -108,6 +110,7 @@ function App() {
     <div className="app-background">
       <div className="App">
         <div className="todo-header">
+          <img src={Logo} alt="Logo" className="logo-todo" />
           <h1>React Todo</h1>
         </div>
         <div className="form-todo">
@@ -160,6 +163,9 @@ function App() {
           ))}
         </div>
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

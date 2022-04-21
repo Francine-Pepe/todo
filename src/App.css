@@ -3,16 +3,13 @@
     height: auto;
     padding: 0;
     margin: 0;
-    /* background-image: url('./Image/notebook_paper_bg.jpg'); */
-    background-position: center;
-    background-repeat: no-repeat;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
 }
 
 .App {
-    width: 80vw;
+    width: 70vw;
     margin: 2em auto;
     background-color: rgb(0,0,0);
     border-radius: 5px;
@@ -22,9 +19,12 @@
 }
 
 .todo-header {
-    padding: 0.5em;
+    padding: 1em;
     border-bottom: 1px solid #2c3035;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .todo-header h1 {
@@ -32,6 +32,16 @@
     font-family: 'Codystar', cursive;
     
 }
+
+.logo-todo {
+    width: 40px;
+    height: 40px;
+}
+
+/* .todo-header .logo-todo {
+    margin: auto;
+    margin-left: 8em;
+} */
 
 .form-todo {
     padding: 1em;
@@ -55,7 +65,7 @@
 .form-control label {
     font-weight: bold;
     font-size: .7em;
-    margin-bottom: .4em;
+    margin: 0.6em 10%;
 }
 
 .form-control input {
@@ -65,18 +75,20 @@
     padding: 0.5em;
     color: #dfdfdf;
     font-family: 'Rock Salt', cursive;
+    width: 80%;
+    margin: 0 10%;
 }
 
 input[type="submit"] {
     background-color: rgb(4, 234, 241);
     color: rgb(61, 126, 126);
     display: block; 
-    width: 80%;
+    width: 60%;
     border: 1px solid rgb(61, 126, 126);
     border-radius: 5px;
     padding: 1em;
     cursor: pointer;
-    margin: 0 10%;
+    margin: 0 20%;
 }
 
 .list-todo {
@@ -92,6 +104,7 @@ input[type="submit"] {
 
 .list-todo p {
     text-align: center;
+    font-family: Roboto;
 }
 
 .todo {
@@ -129,7 +142,7 @@ input[type="submit"] {
 
 .loading {
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -141,7 +154,12 @@ input[type="submit"] {
 .due_date p {
     margin-right: 2em;
     font-size: 1em;
-    
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 1em;
+    font-family: Roboto;
 }
 
 /* Calendario CSS */
